@@ -24,5 +24,5 @@ plt.plot(range(0, x_max + 1), func(range(0, x_max + 1), *popt), label=label_stri
 plt.xlim(1, x_max)
 plt.legend()
 plt.tight_layout()
-plt.savefig("ao3_distribution.png")
+plt.savefig("ao3_distribution.svg")
 plt.show()
