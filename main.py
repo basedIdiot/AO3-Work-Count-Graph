@@ -21,6 +21,7 @@ plt.stairs(hist[:x_max], edges[:x_max + 1], fill=True, label="Work function of A
 label_string = "$" + str(popt[0]) + r"x^{" + str(popt[1]) + "}$" #can't be bothered to figure out f strings with MathML...
 plt.plot(range(0, x_max + 1), func(range(0, x_max + 1), *popt), label=label_string)
 
+plt.xticks(list(plt.xticks()[0]) + [1])  # add extra tickmark at x = 1
 plt.xlim(1, x_max)
 plt.legend()
 plt.tight_layout()
