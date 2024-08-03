@@ -22,6 +22,8 @@ label_string = "$" + str(popt[0]) + r"x^{" + str(popt[1]) + "}$" #can't be bothe
 plt.plot(range(0, x_max + 1), func(range(0, x_max + 1), *popt), label=label_string)
 
 plt.xticks(list(plt.xticks()[0]) + [1])  # add extra tickmark at x = 1
+plt.xlabel("Work count")
+plt.ylabel("Number of fandoms")
 plt.xlim(1, x_max)
 plt.legend()
 plt.tight_layout()
